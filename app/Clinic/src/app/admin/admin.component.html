@@ -1,0 +1,331 @@
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4" style="border-right: solid 1px #eeeeee;">
+            <h1 style="color: #007bff;"> Registrar usuario</h1>
+       <!--Formulario Usuario-->
+       <form id="formUser">
+        <label class="checkbox-inline">
+            <label class="col-form-label">Registrar un(a):&emsp;</label>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active" id="lblasist" (click)="showAsist();">
+                <input  id="checkAsist" type="radio" name="options"  autocomplete="off" checked> Asistente
+                </label>
+                <label class="btn btn-secondary" id="lblmedico" (click)="showMedic();">
+                <input id="checkMedic" type="radio" name="options"  autocomplete="off"  > Medico
+              </label>
+            </div>
+        </label>
+        <h5 class="modal-title" id="exampleModalLabel">Datos de usuario</h5>
+        <br>
+        <input type="text" class="form-control" id="apellidoP" placeholder="Apellido paterno" autocomplete="off">
+        <br>
+        <input type="text" class="form-control" id="apellidoM" placeholder="Apellido materno" autocomplete="off">
+        <br>
+        <input type="text" class="form-control" id="nombre" placeholder="Nombre(s)" autocomplete="off">
+        <br>
+        <input type="text" class="form-control" id="usersignup" placeholder="Usuario" autocomplete="off">
+        <br>
+        <input type="password" class="form-control" id="contrasena" placeholder="contraseña" autocomplete="off">
+        <br>
+        <input  type="file"  id="foto" autocomplete="off">
+        <br> <br>
+        
+        <select  class="form-control" id="tema"  autocomplete="off">
+          <option value="0" selected disabled>Seleccione un tema...</option>
+          <option value="dark">Obscuro</option>
+          <option value="light">Claro</option>
+        </select>
+        <br>
+        <select  class="form-control" id="lenguaje" autocomplete="off">
+          <option value="0" selected disabled>Seleccione lenguaje...</option>
+          <option value="sp">Español</option>
+          <option value="en">English</option>
+        </select>
+      </form>
+      <!--Fin formulario Usuario-->
+      
+      <!-- Formulario Medico-->
+      <form id="formMedico" style="display: none;">
+        <br>
+        <h5 class="modal-title" id="exampleModalLabel">Datos personales</h5><br>
+        <input type="text" class="form-control" id="cedula" placeholder="Cédula profesional" autocomplete="off">
+        <br>
+        <select class="form-control" id="especialidad"  autocomplete="off">
+          <option value="0" selected disabled>Seleccione especialidad...</option>
+        </select>
+        <br>
+        <input type="number" class="form-control" id="telcasa" placeholder="Telefono de casa" autocomplete="off">
+        <br>
+        <input type="number" class="form-control" id="telmovil" placeholder="Telefono móvil" autocomplete="off">
+        <br>
+        <input type="number" class="form-control" id="telofice" placeholder="Telefono oficina(opcional)" autocomplete="off">
+        <br>
+        <input type="email" class="form-control" id="emailper" placeholder="e-mail personal" autocomplete="off">
+        <br>
+        <input type="email" class="form-control" id="emailtrab" placeholder="e-mail trabajo(opcional)" autocomplete="off">
+        <br>
+        <h5 class="modal-title" >Horario</h5><br>
+        <input type="checkbox" class="form-group" id="checkLunes" style="position: relative; float: left; margin: 5px;" >
+        <label style="margin-right: 55px;">Lunes</label>
+        <label style="margin-right: 10px;">Entrada</label>
+        <select id="inicioLunes" disabled ="true" class="hoursSelect">
+          <option value="0" selected disabled>Hr</option>         
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+        <label style="margin-right: 10px;">:00</label>
+        <label style="margin-right: 10px;">Salida</label>
+        <select id="finalLunes" disabled ="true" class="hoursSelect">
+          <option value="0" selected disabled>Hr</option>         
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+        <label>:00</label>
+        <br>
+        <input type="checkbox" class="form-group" id="checkMartes" style="position: relative; float: left; margin: 5px;" >
+        <label style="margin-right: 50px;">Martes</label>
+        <label style="margin-right: 10px;">Entrada</label>
+        <select id="inicioMartes" disabled ="true" class="hoursSelect">
+          <option value="0" selected disabled>Hr</option>          
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+        <label style="margin-right: 10px;">:00</label>
+        <label style="margin-right: 10px;">Salida</label>
+        <select id="finalMartes" disabled ="true" class="hoursSelect">
+          <option value="0" selected disabled>Hr</option>          
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+        <label>:00</label>
+        <br>
+        <input type="checkbox" class="form group" id="checkMiercoles" style="position: relative; float: left; margin: 5px;" >
+        <label style="margin-right: 30px;">Miercoles</label>
+        <label style="margin-right: 10px;">Entrada</label>
+        <select id="inicioMiercoles" disabled ="true" class="hoursSelect">
+          <option value="0" selected disabled>Hr</option>         
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+        <label style="margin-right: 10px;">:00</label>
+        <label style="margin-right: 10px;">Salida</label>
+        <select id="finalMiercoles" disabled ="true" class="hoursSelect">
+          <option value="0" selected disabled>Hr</option>          
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+        <label >:00</label>
+        <br>
+        <input type="checkbox" class="form group" id="checkJueves" style="position: relative; float: left; margin: 5px;" >
+        <label style="margin-right: 48px;">Jueves</label>
+        <label style="margin-right: 10px;">Entrada</label>
+        <select id="inicioJueves" disabled ="true" class="hoursSelect">
+          <option value="0" selected disabled>Hr</option>          
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+        <label style="margin-right: 10px;">:00</label>
+        <label style="margin-right: 10px;">Salida</label>
+        <select id="finalJueves" disabled ="true" class="hoursSelect">
+          <option value="0" selected disabled>Hr</option>          
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+        <label >:00</label>
+        <br>
+        <input type="checkbox" class="form group" id="checkViernes" style="position: relative; float: left; margin: 5px;" >
+        <label style="margin-right: 45px;">Viernes</label>
+        <label style="margin-right: 10px;">Entrada</label>
+        <select id="inicioViernes" disabled ="true" class="hoursSelect">
+          <option value="0" selected disabled>Hr</option>          
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+        <label style="margin-right: 10px;">:00</label>
+        <label style="margin-right: 10px;">Salida</label>
+        <select id="finalViernes" disabled ="true" class="hoursSelect">
+          <option value="0" selected disabled>Hr</option>          
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+        <label >:00</label>
+        <br>
+      </form>
+      <br>
+      <button type="button" class="btn btn-primary float-right" id="btnOkUser" >Guardar</button>  
+      <button type="button" class="btn btn-secondary float-right" style="margin-right: 2%;" id="cancelUser">Cancelar</button>
+      <br>
+      <label></label>
+      <!-- Fin formulario Medico-->
+        </div>
+
+
+      <!--Agregar especialidad-->
+      <div class="col-sm-4" style="border-right: solid 1px #eeeeee;">
+       <div style="border-bottom: solid 1px #eeeeee;">
+        <h1 style="color: #007bff;">Agregar especialidad</h1>
+        <br>
+        <select class="form-control" id="medicEsp"  autocomplete="off">
+            <option value="0" selected disabled>Seleccione medico...</option>
+          </select>
+        <br>
+        <select class="form-control" id="especialidadEsp"  autocomplete="off">
+            <option value="0" selected disabled>Seleccione especialidad...</option>
+          </select>
+        <br>
+      <button type="button" class="btn btn-primary float-right" id="btnOkSpec" >Guardar</button>  
+      <button type="button" class="btn btn-secondary float-right" style="margin-right: 2%;" id="cancelSpec">Cancelar</button>
+      <br>
+      <label></label>
+      </div>
+      <!--Agregar día libre-->
+      <br>
+      <h1 style="color: #007bff;">Agregar día libre</h1>
+      <br>
+      <select class="form-control" id="medicFree"  autocomplete="off">
+          <option value="0" selected disabled>Seleccione medico...</option>
+        </select>
+      <br>
+      <input type="date" class="form-control" id="freeday"  autocomplete="off" >
+      <br>
+      <label class="col-form-label" id="resultcheck"></label>
+        
+      <br>
+    <button type="button" class="btn btn-primary float-right" id="btnOkFree" >Guardar</button>  
+    <button type="button" class="btn btn-secondary float-right" style="margin-right: 2%;" id="cancelFree">Cancelar</button>
+    <br>
+    <label></label>
+
+
+      </div>
+
+      <!--Cambio de password-->
+      <div class="col-sm-4" >  
+            <h1 style="color: #007bff;">Cambio de contraseña</h1>
+            <br>
+            <input type="text" class="form-control" id="userPass" placeholder="Usuario" autocomplete="off">
+            <br>
+            <input type="password" class="form-control" id="contrasenaPass" placeholder="Nueva contraseña" autocomplete="off">
+            <br>
+            <input type="password" class="form-control" id="contrasenaPassC" placeholder="Confirmar contraseña" autocomplete="off">
+            <br>
+            <button type="button" class="btn btn-primary float-right" id="btnOkPass">Guardar</button>  
+        <button type="button" class="btn btn-secondary float-right" style="margin-right: 2%;" id="cancelPass">Cancelar</button>
+        <label></label>
+        
+        </div>
+    </div> 
+</div>
+
+

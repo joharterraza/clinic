@@ -1,0 +1,13 @@
+{
+    "files" : {
+        "userPhotos" : "http://localhost:8080/clinicamedica/api/photos/"
+
+    },
+    "mySqlConnection" : {
+        "server" : "localhost",
+        "database": "clinica_medica",
+        "user" : "root",
+        "password" : ""
+    }
+    
+}

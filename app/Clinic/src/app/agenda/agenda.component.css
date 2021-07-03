@@ -1,0 +1,37 @@
+.modal {
+    overflow-y:auto;
+  }
+
+#cancel{
+    background-color: #FFF;
+    border-color:  #007bff;
+    color: #007bff;
+}
+
+.cuadrado {
+  width: 20px; 
+  height: 20px;   
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+
+#cancelada{
+  background: #FFC7CE;
+}
+
+
+
+#completada{
+  background:#B4C6E7;
+ 
+}
+
+#encurso{
+  background: #C6EFCE;
+}
+
+#agendada{
+  background: #007bff;
+}
+

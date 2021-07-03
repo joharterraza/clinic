@@ -1,0 +1,31 @@
+.white{
+    background-color: #FFF; 
+}
+.cont{
+    margin-top: 2%;
+}
+#alergias{
+    
+    background-color: #FFC7CE;
+    
+
+}
+.second{
+    background-color: #FFF;
+    border-color:  #007bff;
+    color: #007bff;
+}
+
+.agregado{
+    color: #4CAF50;
+    height: 45px;
+    width: 45px;
+    display: none;
+    animation-name: hide;
+    animation-duration: 1.5s;
+}
+
+@keyframes hide {
+    from {opacity: 100;}
+    to {opacity: 0;}
+}

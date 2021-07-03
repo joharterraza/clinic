@@ -1,0 +1,172 @@
+<div class="row" style="margin: 2%;">
+  <div class="col-sm-3"><div class="cuadrado" id="agendada"></div><label >Agendada</label></div>  
+  <div class="col-sm-3"><div class="cuadrado" id="cancelada"></div><label >Cancelada</label></div>
+  <div class="col-sm-3"><div class="cuadrado" id="encurso"></div><label >En curso</label></div>
+  <div class="col-sm-3"><div class="cuadrado" id="completada"></div><label >Completada</label></div>
+
+</div>
+<div class="row" id="selects">
+  <div class="col-sm-3">
+    <select class="custom-select custom-select-sm" id="selectesp" style="display: none; font-size: 12pt;">
+      
+    </select>
+  </div>
+  <div class="col-sm-3">
+    <select class="custom-select custom-select-sm" id="selectmedico" style="display: none;font-size: 12pt;">
+      
+    </select>
+  </div>
+  <div class="col-sm-6 d-flex flex-row-reverse" >
+    <label id = "clock"style="font-size: 22pt;"></label>
+  </div>
+</div>
+
+
+<div id = "calendar">
+    <full-calendar deepChangeDetection = "true" id ="cal" [options]="calendarOptions"></full-calendar>
+</div>
+
+<div class="modal fade" id="addCitaModal"  >
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content" id="contentmod">
+        <div class="modal-header" style="background-color: #0275d8; color: white">
+          <h5 class="modal-title" id="titlemodal">Añadir Cita</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="addcitabody" >
+            <form id="formanadir">
+                <div class="form-group" id="formfecha">
+                  <label class="col-form-label">Fecha:</label>
+                  
+                </div>
+                <div class="form-group" id="formmedico">
+                  <label class="col-form-label" id="lblmedico">Medico</label>
+                  
+                </div>
+                <div class="form-group" id="formconsul">
+                    <label class="col-form-label">Consultorios disponibles</label>
+                   
+                </div>
+                <div class="form-group" id="formtratamiento">
+                  <label class="col-form-label" id="tratamientolbl">Tratamiento
+                    
+                  </label>
+                 
+                  
+                  
+
+              </div>
+              <div class="form-group" id="formpaciente">
+                    <label class="col-form-label" id="lblbuscarp">Buscar paciente</label>
+                   
+                </div>  
+               
+                  
+                <div class="form-group" id="divPaciente" style="display: none;">
+                    <h3 style="text-align: center;" >Paciente</h3>
+                   
+                    <label class="col-form-label" style="display: none;" id="appatP">Apellido Paterno</label>
+                   
+                    <label class="col-form-label" style="display: none;" id="apmatP">Apellido Materno</label>
+                    
+                    <label class="col-form-label" style="display: none;" id="nombreP">Nombre</label>
+                   
+                    <label class="col-form-label" id="nom">Nombre Completo</label>
+
+                    <label class="col-form-label" id="gen">Genero</label>
+                    
+                    <label class="col-form-label" id="fechanac">Fecha de nacimiento</label>
+
+                    <label class="col-form-label" id="edad">Edad</label>                  
+                    
+                    <label class="col-form-label"  id="dir">Direccion</label>
+                    
+                    <label class="col-form-label"  id="telc">Telefono casa</label>
+                    
+                    <label class="col-form-label"  id="telm">Telefono movil</label>
+                    
+                    <label class="col-form-label"  id="telo">Telefono oficina</label>
+                    
+                    <label class="col-form-label"  id="ep">Email personal</label>
+                    
+                    <label class="col-form-label"  id="et">Email de trabajo</label>
+                    
+                </div>
+                <div class="form-group" id="formselectce">
+                  
+                 
+                </div>  
+                <div class="form-group"  id="divCE" style="display: none;">
+                    <h3 style="text-align: center;">Contacto de emergencia</h3>
+                  
+                    <label class="col-form-label" id="lblnomce">Nombre</label>
+                                       
+                    <label class="col-form-label" id="lbltelcce">Telefono casa</label>
+                    
+                    <label class="col-form-label" id="lbltelmce">Telefono movil</label>
+                    
+                    <label class="col-form-label" id="lblteloce">Telefono oficina</label>
+                    
+                    <label class="col-form-label" id="lblepce">Email personal</label>
+                    
+                    <label class="col-form-label" id="lbletce">Email de trabajo</label>
+                    
+                </div>
+                
+              </form>
+        </div>
+        <div class="modal-footer" id="footmod">
+          
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="preguntaPacienteModal" >
+  <div class="modal-dialog" role="document">
+      <div class="modal-content" id="contentmod">
+          <div class="modal-header" >
+              <h5 class="modal-title" id="ppTitle" >Seleccione una opcion</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body" id="alertbody">
+              <div class="row">
+                <div class="col-sm-6">
+                  <button type="button" class="btn btn-primary" id="pacienteNuevo" data-dismiss="modal">Paciente nuevo</button>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn btn-primary" id="pacienteRegular"data-dismiss="modal">Paciente Registrado</button>
+                </div>
+              </div>
+          </div>
+      </div>
+ </div> 
+</div>
+
+<div class="modal fade" id="preguntaStatus" >
+  <div class="modal-dialog" role="document">
+      <div class="modal-content" id="contentmod">
+          <div class="modal-header" >
+              <h5 class="modal-title" id="psTitle" >Seleccione una opcion</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body" id="alertbody">
+              <div class="row">
+                <div class="col-sm-6">
+                  <button type="button" class="btn btn-primary" id="cancelarstatus" data-dismiss="modal">Cancelar cita</button>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn btn-primary" id="verinformacion"data-dismiss="modal">Ver informacion</button>
+                </div>
+              </div>
+          </div>
+      </div>
+ </div> 
+</div>
+

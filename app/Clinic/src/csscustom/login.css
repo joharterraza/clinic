@@ -1,0 +1,215 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+
+#bodydark{
+    background: #222;
+}
+
+
+
+#bodylight{
+   background: #eceff1;
+}
+
+header{
+    position: relative;
+    float: left;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    font-size: 14pt;
+    padding: 10px;
+}
+
+#content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*content theme*/
+.contentlight{
+    background: #eceff1;
+    
+}
+.contentdark{
+    background: #222;
+}
+
+/*window dark theme*/
+#windowdark{
+    background: #333;
+}
+
+#windowdark label{
+    color: #eee;
+}
+
+#windowdark input{
+    background: #ddd;
+    color: #000;
+}
+
+/*light theme*/
+#windowlight{
+    background: #fff;
+}
+
+#windowlight label{
+    color: #78909c;
+}
+
+#windowlight input{
+    background: #fff;
+    color:  #546e7a;
+}
+
+
+#userphoto {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#userdata {
+    position: relative;
+    margin: 5px;
+}
+
+#usernameL {
+    font-size: 15pt;
+    margin: 5px;
+    color: #fff;
+}
+
+#userrole {
+    font-size: 12pt;
+    margin: 5px;
+    color: #fff;
+}
+
+.window{
+    position: relative;
+    width: 30%;
+    margin-top: 20px;
+    
+    border: 1px solid #cfd8dc;
+}
+
+.window h1{
+    display: block;
+    width: calc(100% - 10px);
+    padding: 10px 0px 10px 10px;
+    margin: 0px;
+    background: #000;
+    color: #fff;
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+.windowlabel{
+    display: block;
+    width: calc(100% - 10px);
+    margin: 10px 0px 10px 10px;
+   
+    font-size: 12pt;
+}
+
+.window input, .window select{
+    margin: 10px;
+    padding: 10px;
+    font-size: 12pt;
+   
+    border: 1px solid #cfd8dc;
+}
+
+.window input{
+    width: calc(100% - 42px);
+}
+
+.window select{
+    width: calc(100% - 22px);
+}
+
+
+.window input:focus{
+    background: #ddd;
+}
+
+.windowerrorlabel{
+    display: none;
+    width: calc(100% - 10px);
+    margin: 10px;
+    padding: 10px;
+    background: #ffcdd2;
+    color: #c62828;
+    border: 1px solid #c62828;
+    font-size: 12pt;
+}
+
+.windowelcomelabel{
+    display: none;
+    width: calc(100% - 10px);
+    margin: 10px;
+    padding: 10px;
+    background: #A5D6A7;
+    color: #43a047;
+    border: 1px solid #43a047;
+    font-size: 12pt;
+}
+
+.windowbuttons{
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.windowbutton, .windowprimarybutton{
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12pt;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.windowbutton{
+    background: #b0bec5;
+    border: 1px solid #90a4ae;
+    flex-grow: 1;
+}
+
+.windowprimarybutton{
+    background: #43a047;
+    border: 1px solid #2e7d32;
+    flex-grow: 2;
+}
+
+.windowbutton:hover{
+    background: #cfd8dc;
+    border: 1px solid #b0bec5;
+}
+
+.windowprimarybutton:hover{
+    background: #4caf50;
+    border: 1px solid #388e3c;
+}
+
+#exiticon{
+    width: 30px; height: 30px;
+    margin: 10px;
+    color: white;
+    font-size: x-large;
+}
+

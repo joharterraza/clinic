@@ -1,0 +1,142 @@
+<div class="container-fluid" style="background-color: #ECEFF1;">
+    <div class="row" style="justify-content: center;">
+        <div class="col-xl-11 shadow p-3 mb-5 bg-white rounded" style="margin-top: 1%; background-color: #FFF;">
+            <div class="row">
+                <div class="col-sm-4" >
+                    <h5 class="titles"><b>Nombre:&nbsp;</b></h5> 
+                    <h5 id="nombre" class="pacientdata"> </h5>
+                    <h5 class="titles">Edad:&nbsp;</h5>
+                    <h5 id="edad" class="pacientdata"></h5>
+                </div>
+                <div class="col-sm-4" >
+                    <h5 class="titles">Fecha de nacimiento:&nbsp;</h5>
+                    <h5 id="fechanac" class="pacientdata"></h5>
+                    <h5 class="titles">Sexo:&nbsp;</h5>
+                    <h5 id="sexo" class="pacientdata"></h5>
+                </div>
+                <div class="col-sm-4" style="text-align: center;" >
+                    <h5  >Direccion:</h5>
+                    <h5 id="direccion" class="pacientdata"></h5>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="row " style="margin-top: 5%; justify-content: space-around;" >
+        <div class="col-xl-4  shadow p-3 mb-5 bg-white rounded" style="background-color: #FFF; height: auto;">
+           <h4><u>Somatometria</u></h4>
+           <br>
+           <div class="row" style="justify-content: center;">
+               <div class="col-5">
+                <h5> <img src="../../assets/altura.png" style="height: 30px; width: 30px;">&nbsp; Estatura: </h5>
+                <h5><img src="../../assets/peso.png" style="height: 30px; width: 30px;">&nbsp; Peso: </h5>
+                <h5><img src="../../assets/imc.png" style="height: 30px; width: 30px;">&nbsp; IMC: </h5>
+               
+                
+               </div>
+               <div class="col-6">
+                <h5><input type="text" size="4" maxlength="8" class="fillable"/>&nbsp; mts</h5>
+                <h5><input type="text" size="4" maxlength="8" class="fillable"/>&nbsp; kg</h5>
+               
+               
+               </div>
+           </div>
+           <hr style="border-top: 2px solid #999; border-bottom: 2px solid #999; border-radius: 30%;">
+           <h4><u>Signos vitales</u></h4>
+           <br>
+           <div class="row" style="justify-content: center;">
+               <div class="col-5">
+                <h5><img src="../../assets/presion.png" style="height: 30px; width: 30px;">&nbsp; P.arterial: </h5>
+                <h5> <img src="../../assets/respiracion.png" style="height: 30px; width: 30px;">&nbsp; F.R: </h5>
+                <h5> <img src="../../assets/pulso.png" style="height: 30px; width: 30px;">&nbsp; F.C: </h5>
+                <h5> <img src="../../assets/termometro.png" style="height: 30px; width: 30px;">&nbsp; Temp: </h5>
+               </div>
+               <div class="col-6">
+                <h5><input type="text" size="3" maxlength="7"/>&nbsp; mmhg</h5>
+                <h5><input type="text" size="3" maxlength="7"/>&nbsp; r/m</h5>
+                <h5><input type="text" size="3" maxlength="7"/>&nbsp; p/m</h5>
+                <h5><input type="text" size="3" maxlength="7"/>&nbsp; &#176;C</h5>
+               </div>
+           </div>
+          
+           <br>
+           <button type="button" class="btn btn-primary float-right" >Guardar</button>  
+           <button type="button" class="btn btn-secondary float-right" style="margin-right: 2%;">Borrar</button>
+           <br><br>
+           
+          
+            
+        </div>
+        
+        <div class="col-xl-7 shadow p-3 mb-5 bg-white rounded" style="background-color: #FFF; height: auto;">
+            <div class="row" style="justify-content: center;">
+                <div class="col-md-5">
+                    <div style="text-align: center;"><h4><u>Contacto: </u></h4></div><br>
+                    <h5>Numeros telefonicos:</h5>
+                    <!--casa-->
+                    <img src="../../assets/casa.png" style="height: 30px; width: 30px;" class="titles">
+                    <h5 class="titles">&emsp;Casa:&nbsp;</h5>
+                    <h5 id="telc" class="pacientdata"></h5><br>
+                    <!--movil-->
+                    <img src="../../assets/telefono-celular.png" style="height: 30px; width: 30px;" class="titles">
+                    <h5 class="titles">&emsp;Movil:&nbsp;</h5>
+                    <h5 id="telm" class="pacientdata"></h5><br>
+                    <!--oficina-->
+                    <img src="../../assets/trabajando.png" style="height: 30px; width: 30px;" class="titles">
+                    <h5 class="titles">&emsp;Oficina:&nbsp;</h5>
+                    <h5 id="telo" class="pacientdata"></h5><br>
+                    
+                   
+                    <h5>Correos electrónicos:</h5>
+                    <!--personal-->
+                    <img src="../../assets/correo-electronico.png" style="height: 30px; width: 30px;" class="titles">
+                    <h5 class="titles">&emsp;Personal:&nbsp;</h5>
+                    <h5 id="emailp" class="pacientdata"></h5><br>
+
+                    <!--trabajo-->
+                    <img src="../../assets/correo-electronico.png" style="height: 30px; width: 30px;" class="titles">
+                    <h5 class="titles">&emsp;De trabajo:&nbsp;</h5>
+                    <h5 id="emailt" class="pacientdata"></h5><br>
+                  
+                    
+                </div>
+                <div style="border-left: 2px solid #999; border-right: 2px solid #999; border-radius: 30%;"></div>
+                <div class="col-md-5">
+                    <div style="text-align: center;"><h4><u>Contacto de emergencia: </u></h4></div><br>
+                    <h5>Nombre del contacto:&nbsp;</h5>
+                    <h5 id="nombrece"></h5><br>
+                    <h5>Numeros telefonicos:</h5>
+                    <img src="../../assets/casa.png" style="height: 30px; width: 30px;" class="titles">
+                    <h5 class="titles">&emsp;Casa:&nbsp;</h5>
+                    <h5 id="telcce" class="pacientdata"></h5><br>
+                    <!--movil-->
+                    <img src="../../assets/telefono-celular.png" style="height: 30px; width: 30px;" class="titles">
+                    <h5 class="titles">&emsp;Movil:&nbsp;</h5>
+                    <h5 id="telmce" class="pacientdata"></h5><br>
+                    <!--oficina-->
+                    <img src="../../assets/trabajando.png" style="height: 30px; width: 30px;" class="titles">
+                    <h5 class="titles">&emsp;Oficina:&nbsp;</h5>
+                    <h5 id="teloce" class="pacientdata"></h5><br>
+                    
+                    <h5>Correos electrónicos:</h5>
+                    <!--personal-->
+                    <img src="../../assets/correo-electronico.png" style="height: 30px; width: 30px;" class="titles">
+                    <h5 class="titles">&emsp;Personal:&nbsp;</h5>
+                    <h5 id="emailpce" class="pacientdata"></h5><br>
+
+                    <!--trabajo-->
+                    <img src="../../assets/correo-electronico.png" style="height: 30px; width: 30px;" class="titles">
+                    <h5 class="titles">&emsp;De trabajo:&nbsp;</h5>
+                    <h5 id="emailtce" class="pacientdata"></h5><br>
+                </div>
+            </div>
+           
+           
+        </div>
+        
+    </div>
+    
+
+
+</div>
